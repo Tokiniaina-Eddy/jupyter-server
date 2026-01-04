@@ -11,8 +11,6 @@ RUN useradd -m jupyter
 USER jupyter
 WORKDIR /home/jupyter
 
-# --- LA CORRECTION EST ICI ---
-# On ajoute le dossier des scripts locaux au PATH pour que "jupyter" soit reconnu
 ENV PATH="/home/jupyter/.local/bin:${PATH}"
 
 # Installation des dépendances Python
